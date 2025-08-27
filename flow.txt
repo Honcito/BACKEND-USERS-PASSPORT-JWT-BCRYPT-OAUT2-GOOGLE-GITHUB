@@ -1,0 +1,25 @@
+npm init -y
+npm install express mongoose jsonwebtoken bcrypt dotenv express-session express-validator helmet cors morgan axios nodemon
+npm install passport passport-jwt passport-google-oauth20 passport-github
+
+
+Librerías Principales
+
+express: El framework web principal para tu API.
+mongoose: El ODM (Object Data Modeling) para interactuar con MongoDB.
+jsonwebtoken: Crea y verifica los tokens JWT.
+bcrypt: Hashea las contraseñas de manera segura para la autenticación local.
+dotenv: Carga variables de entorno desde un archivo .env.
+express-session: Gestiona las sesiones de usuario, requerido por las estrategias OAuth de Passport.
+express-validator: Valida los datos de entrada del usuario (registros, logins).
+helmet: Añade encabezados de seguridad HTTP para proteger tu API.
+cors: Permite que tu frontend haga peticiones a tu backend desde un origen diferente.
+morgan: Middleware de logging para registrar las peticiones HTTP.
+axios: Cliente HTTP para hacer peticiones desde tu backend a otras APIs externas.
+
+Estrategias de Passport
+
+passport: El módulo principal de Passport.js.
+passport-jwt: La estrategia que usará tu backend para autenticar con Bearer Tokens.
+passport-google-oauth20: Estrategia para la autenticación a través de Google.
+passport-github: Estrategia para la autenticación a través de GitHub.
