@@ -4,7 +4,7 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 import connectDB from './config/db.js';
-//import userRoutes from './routes/userRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 // Cargar las variables de entorno
 dotenv.config();
@@ -31,6 +31,6 @@ app.use('/api/users', userRoutes);
 
 
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto ${PORT}`)
+    console.log(`Servidor Express escuchando en el puerto ${PORT}`)
 });
     
