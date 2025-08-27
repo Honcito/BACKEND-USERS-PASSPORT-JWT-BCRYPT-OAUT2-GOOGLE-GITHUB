@@ -22,6 +22,11 @@ const userSchema = mongoose.Schema({
         type: String,
         unique: true,
         required: false
+    },
+    role: {
+        type: String,
+        enum: ['guest', 'user', 'admin'],
+        default: 'user'
     }
 },
 { timestamsp: true }
@@ -41,7 +46,7 @@ userSchema.pre('save', async function(next) {
     }
 });
 
-// Método para comparar contraseñas
+// Método para comparar contraseñas (login)
 userSchema.methods.comparePassword = async function(candidatePassword) {
     return await bcrypt.compare(candidatePassword, this.password);
 }

@@ -1,5 +1,5 @@
 npm init -y
-npm install express mongoose jsonwebtoken bcrypt dotenv express-session express-validator helmet cors morgan axios nodemon
+npm install express mongoose jsonwebtoken bcrypt dotenv express-session express-validator helmet cors morgan axios nodemon crypto
 npm install passport passport-jwt passport-google-oauth20 passport-github
 
 

@@ -1,9 +1,23 @@
+├── .env
+├── .gitignore
+├── LICENSE
+├── README.md
 ├── config
+│   ├── db.js
+│   └── passport-jwt.js
 ├── controllers
+│   └── userController.js
+├── estructura.txt
+├── flow-git.txt
 ├── flow.txt
 ├── generar-arbol.js
+├── generate-secret-key.js
 ├── middlewares
 ├── models
+│   └── User.js
 ├── package-lock.json
 ├── package.json
-└── routes
+├── routes
+│   ├── auth.js
+│   └── userRoutes.js
+└── server.js
