@@ -1,0 +1,16 @@
+git checkout main
+Si la rama main no existe aún en tu repositorio local, puedes crearla y cambiar a ella con:
+
+Bash
+
+git checkout -b main
+2. Vincular y Sincronizar con el Repositorio Remoto 🌐
+Una vez en la rama main local, puedes agregar el repositorio remoto y luego descargar su historial de cambios. Esto es crucial para asegurarte de que tu historial local y remoto estén sincronizados.
+
+Bash
+
+git remote add origin https://github.com/Honcito/BACKEND-USERS-PASSPORT-JWT-BCRYPT-OAUT2-GOOGLE-GITHUB.git
+git pull origin main
+git add .
+git commit -m "Initial commit of the backend project"
+git push -u origin main
